@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .myForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 350px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(218, 238, 255);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0 20px 2px rgba(154, 154, 154, 0.2);
+        }
+
+        .myForm div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .myForm div label {
+            align-self: flex-start;
+        }
+
+        .myForm div input {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            background-color: rgba(255, 255, 255, 0.6);
+            height: 25px;
+            letter-spacing: 1.2px;
+            color: rgb(83, 83, 83);
+        }
+
+        .myForm div input:focus {
+            outline: 1.2px solid black;
+        }
+
+        p.error {
+            display: none;
+            align-self: flex-start;
+            color: red;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color: rgba(0, 98, 255, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <form class="myForm">
+
+    
+        <h1>Feedback</h1>
+        <div class="name-div">
+            <input type="text" id="name" placeholder="Name" onchange="validateForm(event)">
+            <p class="error"></p>
+        </div>
+
+        <div class="mobile-div">
+            <input type="number" id="mobile" min="0" placeholder="Phone Number" onchange="validateForm(event)">
+            <p class="error"></p>
+        </div>
+
+        <div class="email-div">
+            <input type="email" id="email" placeholder="Email" onchange="validateForm(event)">
+            <p class="error"></p>
+        </div>
+
+        <div class ="feedback-div">
+            <input type = "text" id="feedback" placeholder="Feedback" onchange="validateForm(event)">
+            <p class="error"></p>
+        </div>
+
+        <a href="index.html"><button type="button">Submit</button></a>
+</script>
+
+
+    </form>
+
+    <script src="./6_form-validation.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice Haven</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="./flickity.css">
+</head>
+
+<body>
+   
+
+    <header>
+        <div class="branding">
+            <img src="./images/logo.png" alt="">
+            <h1>Juice Heaven</h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="6_form-validation.html">Feedback</a></li>
+                <li><a href="#menulist">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="carousal">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <img src="./images/banner1.jpg" alt="" class="gallery-cell">
+                
+                <img src="./images/banner2.jpg" alt="" class="gallery-cell">
+                <img src="./images/banner3.jpg" alt="" class="gallery-cell">
+            </div>
+        </div>
+        <div class="menu-ontainer">
+            <h2 style='text-align: center;'>Menu</h2>
+            <section id="menulist" class="menu"></section>
+
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <p>Email: juicehaven88@gmail.com</p>
+                <p>Phone: +91 8877664495</p>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2023 Juice Haven</p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./flickity.pkgd.min.js"></script>
+</body>
+
+</html>
